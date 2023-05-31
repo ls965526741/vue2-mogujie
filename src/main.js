@@ -14,7 +14,6 @@ import '@/mock/index'
 Vue.use(toast)
 Vue.prototype.$bus = new Vue()
 Vue.prototype.$http = axios
-
 Vue.config.productionTip = false
 Vue.config.devtools = true
 new Vue({
@@ -24,4 +23,4 @@ new Vue({
 }).$mount('#app')
 
 Fastclick.attach(document.body)
-Vue.use(VueLazyload, { loading: '/img/goods/g11.webp' })
+Vue.use(VueLazyload, { loading: `${process.env.BASE_URL}/img/goods/g11.webp` })

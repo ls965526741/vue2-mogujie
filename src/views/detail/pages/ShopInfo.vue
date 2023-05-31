@@ -1,7 +1,7 @@
 <template>
   <div class="info">
     <div class="title-name">
-      <img src="/img/goodsLogo.png" alt="" class="goodsLogo" />
+      <img :src="`${publicPath}/img/goodsLogo.png`" alt="" class="goodsLogo" />
       <span>{{ shopInfo.name }}</span>
     </div>
     <div class="main">
@@ -29,6 +29,7 @@
   </div>
 </template>
 <script>
+
 export default {
   name: 'ShopInfo',
   props: {
@@ -41,7 +42,8 @@ export default {
   },
   data() {
     return {
-      fee: 0
+      fee: 0,
+      publicPath: process.env.BASE_URL
     }
   },
   methods: {

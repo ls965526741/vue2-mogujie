@@ -1,6 +1,6 @@
 <template>
   <div class="check-button" :class="{ active: isActive }">
-    <img src="/img/cart/tick.svg" alt="" />
+    <img :src="`${publicPath}/img/cart/tick.svg`" alt="" />
   </div>
 </template>
 <script>
@@ -10,6 +10,11 @@ export default {
     isActive: {
       type: Boolean,
       default: true
+    }
+  },
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
     }
   }
 }

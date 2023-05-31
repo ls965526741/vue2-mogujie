@@ -1,7 +1,7 @@
 import axios from 'axios'
 import NProgress from 'nprogress'
 const serve = axios.create({
-  // baseURL:
+  // publicPath:
 })
 serve.interceptors.request.use(function (config) {
   NProgress.start()

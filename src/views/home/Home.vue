@@ -42,8 +42,8 @@ import FeatuerView from './pages/featuerView.vue'
 import TabContral from '@/components/content/tabContral.vue'
 import GoodsList from '@/components/content/goods/GoodsList'
 import Scroll from '@/components/common/scroll/Scroll.vue'
-
 import { backTopMixin } from '@/common/mixin.js'
+const publicPath = process.env.BASE_URL
 
 // import { getHomeMultidata, getHomeGoods } from "network/home";
 
@@ -64,101 +64,101 @@ export default {
       itemImageLister: '',
       banners: [],
       recommends: [
-        { image: '/img/recommend/1.png', title: '推荐' },
-        { image: '/img/recommend/2.png', title: '热点' },
-        { image: '/img/recommend/3.png', title: '新款' },
-        { image: '/img/recommend/4.png', title: '主推' }
+        { image: `${publicPath}/img/recommend/1.png`, title: '推荐' },
+        { image: `${publicPath}/img/recommend/2.png`, title: '热点' },
+        { image: `${publicPath}/img/recommend/3.png`, title: '新款' },
+        { image: `${publicPath}/img/recommend/4.png`, title: '主推' }
       ],
       currentType: 'pop',
       tabContralTop: 0,
       tabContFixed: false,
       isactived: 0,
       homeSwiper: [
-        '/img/hswiper/18092.jpg',
-        '/img/hswiper/180917.jpg',
-        '/img/hswiper/180919.jpg',
-        '/img/hswiper/180926.jpg'
+        `${publicPath}/img/hswiper/18092.jpg`,
+        `${publicPath}/img/hswiper/180917.jpg`,
+        `${publicPath}/img/hswiper/180919.jpg`,
+        `${publicPath}/img/hswiper/180926.jpg`
       ],
       pop: [
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv1.webp',
+          image: `${publicPath}/img/meinv1.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
@@ -167,63 +167,63 @@ export default {
       ],
       new: [
         {
-          image: '/img/meinv2.webp',
+          image: `${publicPath}/img/meinv2.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv2.webp',
+          image: `${publicPath}/img/meinv2.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv2.webp',
+          image: `${publicPath}/img/meinv2.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv2.webp',
+          image: `${publicPath}/img/meinv2.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv2.webp',
+          image: `${publicPath}/img/meinv2.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv2.webp',
+          image: `${publicPath}/img/meinv2.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv2.webp',
+          image: `${publicPath}/img/meinv2.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv2.webp',
+          image: `${publicPath}/img/meinv2.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv2.webp',
+          image: `${publicPath}/img/meinv2.webp`,
           message: '风衣外套女灯笼袖',
           reicew: '99',
           allprice: '140',
@@ -232,70 +232,70 @@ export default {
       ],
       sell: [
         {
-          image: '/img/meinv3.webp',
+          image: `${publicPath}/img/meinv3.webp`,
           message: '风衣外套女灯笼袖3',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv3.webp',
+          image: `${publicPath}/img/meinv3.webp`,
           message: '风衣外套女灯笼袖3',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv3.webp',
+          image: `${publicPath}/img/meinv3.webp`,
           message: '风衣外套女灯笼袖3',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv3.webp',
+          image: `${publicPath}/img/meinv3.webp`,
           message: '风衣外套女灯笼袖3',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv3.webp',
+          image: `${publicPath}/img/meinv3.webp`,
           message: '风衣外套女灯笼袖3',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv3.webp',
+          image: `${publicPath}/img/meinv3.webp`,
           message: '风衣外套女灯笼袖3',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv3.webp',
+          image: `${publicPath}/img/meinv3.webp`,
           message: '风衣外套女灯笼袖3',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv3.webp',
+          image: `${publicPath}/img/meinv3.webp`,
           message: '风衣外套女灯笼袖3',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv3.webp',
+          image: `${publicPath}/img/meinv3.webp`,
           message: '风衣外套女灯笼袖3',
           reicew: '99',
           allprice: '140',
           iid: 'im9p4u'
         },
         {
-          image: '/img/meinv3.webp',
+          image: `${publicPath}/img/meinv3.webp`,
           message: '风衣外套女灯笼袖3',
           reicew: '99',
           allprice: '140',
@@ -387,7 +387,7 @@ export default {
     },
     debounce(func, delay) {
       let timer = null
-      return function (...arg) {
+      return function(...arg) {
         if (timer) clearTimeout(timer)
         timer = setTimeout(() => {
           func.apply(this, arg)

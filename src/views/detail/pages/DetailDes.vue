@@ -2,13 +2,18 @@
   <div class="des">
     <div class="title">宝贝详情</div>
     <div v-for="item in 12" :key="item">
-      <img :src="'/img/g' + item + '.webp'" alt="" @load="imageLoad" />
+      <img :src="`${publicPath}/img/g${item}.webp`" alt="" @load="imageLoad" />
     </div>
   </div>
 </template>
 <script>
 export default {
   name: 'DetailDes',
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  },
   methods: {
     imageLoad() {
       this.$emit('imageLoad')

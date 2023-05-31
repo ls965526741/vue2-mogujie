@@ -22,11 +22,10 @@ import ShopRate from './pages/ShopRate.vue'
 import DetailDes from './pages/DetailDes.vue'
 import BottomNavBar from './pages/BottomNavBar.vue'
 import GoodsList from '@/components/content/goods/GoodsList'
-
 import { debounce } from '@/common/utils.js'
 import { itemListerMixin, backTopMixin } from '@/common/mixin.js'
-
 import Scroll from '@/components/common/scroll/Scroll.vue'
+const publicPath = process.env.BASE_URL
 export default {
   name: 'GoodsDetail',
   components: {
@@ -57,7 +56,13 @@ export default {
           { isBetter: false, name: '质量满意', score: 4.43 }
         ],
         shopLogo: '',
-        topImages: ['/img/meinv1.webp', '/img/meinv2.webp', '/img/meinv3.webp', '/img/meinv1.webp', '/img/meinv2.webp']
+        topImages: [
+          `${publicPath}/img/meinv1.webp`,
+          `${publicPath}/img/meinv2.webp`,
+          `${publicPath}/img/meinv3.webp`,
+          `${publicPath}/img/meinv1.webp`,
+          `${publicPath}/img/meinv2.webp`
+        ]
       },
       shopTitle: {
         title: '【衣美】2021春秋新款原宿风长袖T恤女bf潮学生韩版拼接白色复古港味宽松百搭上衣打底',
@@ -68,7 +73,7 @@ export default {
         favorite: 33,
         deliver: '72小时发货',
         server: ['退货补运费', '全国包邮', '七天无理由退货'],
-        image: '/img/meinv1.webp'
+        image: `${publicPath}/img/meinv1.webp`
       },
       rate: {
         rateCount: 12345,
@@ -79,7 +84,7 @@ export default {
           { rate: '隔音很好', count: '100' },
           { rate: '中音平衡', count: '120' }
         ],
-        user: { userName: '地方看你', userImage: '/img/userImage.png' }
+        user: { userName: '地方看你', userImage: `${publicPath}/img/userImage.png` }
       }
 
       // iid: null,

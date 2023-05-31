@@ -1,5 +1,6 @@
 // import { random } from 'core-js/core/number'
 import Mock from 'mockjs' // 引入mockjs，npm已安装
+const publicPath = process.env.BASE_URL
 const Random = Mock.Random
 Mock.setup({
   timeout: '200-600' // 设置请求延时时间
@@ -31,7 +32,7 @@ const getdata = function (option) { // 定义请求数据方法
       title: Random.ctitle(),
       image2: Random.dataImage('200x100', Random.string(10)),
       image: Random.image('200x100', '#00405d', '#FFF', 'Mock.js'),
-      image1: '/img/g' + 1 + '.webp',
+      image1: publicPath + '/img/g' + 1 + '.webp',
       iid: 'goods' + i
 
     }
@@ -47,76 +48,76 @@ const getdata2 = function (option) { // 定义请求数据方法
       page: 0,
       list: [
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(40),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)
         },
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(8, 23),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)
         },
 
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(8, 23),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)
         },
 
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(8, 23),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)
         },
 
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(8, 23),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)
         },
 
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(8, 23),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)
         },
 
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(8, 23),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)
         },
 
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(8, 23),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)
         },
 
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(8, 23),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)
         },
 
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(8, 23),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)
         },
 
         {
-          image: '/img/g' + Random.string('number', 1) + '.webp',
+          image: publicPath + '/img/g' + Random.string('number', 1) + '.webp',
           message: Random.cword(8, 23),
           reicew: Random.string('number', 1, 4),
           allprice: Random.string('number', 1, 4)

@@ -1,7 +1,7 @@
 <template>
   <nav-bar class="nav-bar">
     <template v-slot:left>
-      <img src="/img/common/back.svg" alt="" class="leftImg" @click="back" />
+      <img :src="`${publicPath}/img/common/back.svg`" alt="" class="leftImg" @click="back" />
     </template>
     <template v-slot:center>
       <div class="center">
@@ -20,6 +20,7 @@
 </template>
 <script>
 import NavBar from '@/components/common/navbar/NavBar.vue'
+
 export default {
   name: 'DetailNavBar',
   components: {
@@ -28,7 +29,8 @@ export default {
   data() {
     return {
       titles: ['商品', '评论', '参数', '详情'],
-      currentIndex: 0
+      currentIndex: 0,
+      publicPath: process.env.BASE_URL
     }
   },
   methods: {
